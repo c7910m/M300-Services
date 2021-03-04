@@ -35,7 +35,7 @@ VM Starten: <br>
 ### Webserver VM
 Zuerst ordner anlegen in der die VM sein soll und eine Datei "Vagrantfile" erstellen (ohne Dateiendung).
 In das Vagrant folgenden inhalt schreiben: <br>
-`
+```
 Vagrant.configure(2) do |config|
     config.vm.box = "ubuntu/xenial64"
     config.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true
@@ -50,4 +50,4 @@ Vagrant.configure(2) do |config|
     sudo apt-get -y install apache2 
   SHELL
   end
-`
+```
