@@ -53,3 +53,4 @@ Vagrant.configure(2) do |config|
   SHELL
   end
 ```
+Nun muss man nur noch in einer Shell in das Verzeichnis gehen und "vagrant up" eintippen.
