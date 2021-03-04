@@ -17,8 +17,8 @@ Markdown wird zum darstellen einer Datei gebraucht in einem "Humanen Stil".
 
 \Alternatively, for H1 and H2, an underline-ish style:
 
-\Alt-H1
-\======
+<p> \Alt-H1 </p>
+<p> \====== </p>
 
-\Alt-H2
-\------
+<p> \Alt-H2 </p>
+<p> \------ </p>
