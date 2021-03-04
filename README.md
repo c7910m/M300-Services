@@ -30,7 +30,7 @@ Vagrant ist eine freie Ruby-Anwendung zum Erstellen und Verwalten virtueller Mas
 
 ### Befehle
 VM Starten: <br>
-`vagrant up`
+```vagrant up```
 
 ### Webserver VM
 Zuerst ordner anlegen in der die VM sein soll und eine Datei "Vagrantfile" erstellen (ohne Dateiendung).
