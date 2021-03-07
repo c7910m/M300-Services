@@ -4,6 +4,25 @@ Plattformübergreifende Dienste in ein Netzwerk integrieren
 ## Autor
 Marius Huber
 
+## Github
+Git ist eine freie Software zur verteilten Versionsverwaltung von Dateien, die durch Linus Torvalds initiiert wurde.
+
+### File bearbeiten
+Als erstes muss man das Verzeichnis Klonen:
+```
+git clone https://github.com/c7910m/M300-Services/edit/main/README.md
+```
+Es wird in das Verzeichnis kopiert, indem man sich momentan in der Shell befindet.
+
+Nun kann man das heruntergeladene File bearbeiten.
+
+Danach kann man das File wieder hochladen:
+```
+git commit
+git push
+```
+
+
 ## Markdown
 Markdown bearbeiten in Code:
 https://code.visualstudio.com/docs/languages/markdown
