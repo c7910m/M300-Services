@@ -1,6 +1,9 @@
 # M300-Services
 Plattformübergreifende Dienste in ein Netzwerk integrieren
 
+## Autor
+Marius Huber
+
 ## Markdown
 Markdown bearbeiten in Code:
 https://code.visualstudio.com/docs/languages/markdown
