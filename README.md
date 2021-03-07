@@ -1,5 +1,5 @@
 # M300-Services
-M300
+Plattformübergreifende Dienste in ein Netzwerk integrieren
 
 ## Markdown
 Markdown bearbeiten in Code:
