@@ -50,6 +50,12 @@ https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf
 ## Vagrant
 Vagrant ist eine freie Ruby-Anwendung zum Erstellen und Verwalten virtueller Maschinen.[2] Vagrant ermöglicht einfache Softwareverteilung (englisch Deployment) insbesondere in der Software- und Webentwicklung und dient als Wrapper zwischen Virtualisierungssoftware wie VirtualBox, KVM/QEMU, VMware und Hyper-V und Software-Configuration-Management-Anwendungen beziehungsweise Systemkonfigurationswerkzeugen wie Chef, Saltstack und Puppet.
 
+### Netzwerkplan
+
+Bei mir sieht die Config so aus:
+![image](https://user-images.githubusercontent.com/50829674/110802925-f4d4a980-827e-11eb-94ff-dd1340fee389.png)
+
+
 ### Befehle
 | Befehl            | Funktion                                             |
 | -------------     | ---------------------------------------------------- | 
