@@ -8,8 +8,10 @@ Marius Huber
 Git ist eine freie Software zur verteilten Versionsverwaltung von Dateien, die durch Linus Torvalds initiiert wurde.
 
 ### Git Einrichten
-```git config --global user.name "username"``` <br>
-```git confug --global user.email "E-Mail"```
+```
+git config --global user.name "username"
+git confug --global user.email "E-Mail"
+```
 
 ### File bearbeiten
 Als erstes muss man das Verzeichnis Klonen:
