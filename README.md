@@ -81,3 +81,25 @@ Vagrant.configure(2) do |config|
   end
 ```
 Nun muss man nur noch in einer Shell in das Verzeichnis gehen und "`vagrant up`" eintippen.
+
+### VM mit UFW Firewall
+Bei dieser VM wird gleich die Firewall mit installiert und zusätzlich noch rules erstellt.
+```
+Vagrant.configure(2) do |config|
+    config.vm.box = "ubuntu/xenial64"
+    config.vm.network "forwarded_port", guest:80, host:100, auto_correct: true
+    config.vm.synced_folder ".", "/var/www/html"  
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = "512"  
+  end
+  config.vm.provision "shell", inline: <<-SHELL
+    # Packages vom lokalen Server holen
+    # sudo sed -i -e"1i deb {{config.server}}/apt-mirror/mirror/archive.ubuntu.com/ubuntu xenial main restricted" /etc/apt/sources.list 
+    sudo apt-get install ufw
+    sudo ufw enable
+    sudo ufw allow 80/tcp
+    sudo ufw allow from 192.168.1.122 to any port 22
+    sudo ufw allow from 192.168.1.124 to any port 3306
+  SHELL
+  end
+```
