@@ -10,7 +10,7 @@ Git ist eine freie Software zur verteilten Versionsverwaltung von Dateien, die d
 ### Git Einrichten
 ```
 git config --global user.name "username"
-git confug --global user.email "E-Mail"
+git config --global user.email "E-Mail"
 ```
 
 ### File bearbeiten
