@@ -138,7 +138,7 @@ SHELL
 end
 ```
 
-###VM mit SSH, reverse Proxy, Benutzerberechtigungen und Firewall rules
+### VM mit SSH, reverse Proxy, Benutzerberechtigungen und Firewall rules
 Bei dieser VM wird ein SSH Server installiert, Reverse Proxy, Benutzerberechtigungen und Firewallrules eingerichtet.
 ```
 Vagrant.configure(2) do |config|
