@@ -5,6 +5,7 @@ Plattformübergreifende Dienste in ein Netzwerk integrieren
 Marius Huber
 
 # Docker
+Docker ist eine Freie Software zur Isolierung von Anwendungen mit Hilfe von Containervirtualisierung. Docker vereinfacht die Bereitstellung von Anwendungen, weil sich Container, die alle nötigen Pakete enthalten, leicht als Dateien transportieren und installieren lassen.
 ## Befehle
 | Befehl            | Funktion                                             |
 | -------------     | ---------------------------------------------------- | 
