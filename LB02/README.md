@@ -9,6 +9,7 @@ Docker ist eine Freie Software zur Isolierung von Anwendungen mit Hilfe von Cont
 ## Befehle
 | Befehl            | Funktion                                             |
 | -------------     | ---------------------------------------------------- | 
+| ```docker pull```      | Holt ein Image. |
 | ```docker version```      | Zeigt die Docker Version von Echo-Client und Server an. |
 | ```docker images```        | Listet alle Docker Images auf. |
 | ```docker exec```       | Führt einen Befehl in einem laufenden Container aus. |
