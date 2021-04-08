@@ -23,6 +23,7 @@ Docker ist eine Freie Software zur Isolierung von Anwendungen mit Hilfe von Cont
 ![image](https://user-images.githubusercontent.com/50829674/114029048-6bae9380-9879-11eb-960f-7c95fed70dc5.png)
 
 ## Webserver erstellen
+Hier wird kurz erklärt wie man eine einfache Webseite anhand eines Containers anbietet.
 ### Dockerfile
 ```
 #
