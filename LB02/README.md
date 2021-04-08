@@ -72,3 +72,6 @@ So könnte man auch die Website abändern:
 ```
 docker cp <Pfad vom HTML File auf Notebook> <VM Name>:/var/www/html/
 ```
+
+Bei mir sieht es nun so aus:
+![image](https://user-images.githubusercontent.com/50829674/114038550-42decc00-9882-11eb-8840-0b3d80876160.png)
