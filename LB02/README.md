@@ -4,9 +4,9 @@ Plattformübergreifende Dienste in ein Netzwerk integrieren
 ## Autor
 Marius Huber
 
-# Docker
+## Docker
 Docker ist eine Freie Software zur Isolierung von Anwendungen mit Hilfe von Containervirtualisierung. Docker vereinfacht die Bereitstellung von Anwendungen, weil sich Container, die alle nötigen Pakete enthalten, leicht als Dateien transportieren und installieren lassen.
-## Befehle
+### Befehle
 | Befehl            | Funktion                                             |
 | -------------     | ---------------------------------------------------- | 
 | ```docker pull```      | Holt ein Image. |
@@ -19,12 +19,12 @@ Docker ist eine Freie Software zur Isolierung von Anwendungen mit Hilfe von Cont
 | ```docker attach```      | Hängt etwas an einen laufenden Container an. |
 | ```docker commit```   | Erstellt ein neues Image mit den Änderungen, die an einem Container vorgenommen worden sind. |
 
-## Netzwerkplan
+### Netzwerkplan
 ![image](https://user-images.githubusercontent.com/50829674/114029048-6bae9380-9879-11eb-960f-7c95fed70dc5.png)
 
-## Webserver erstellen
+### Webserver erstellen
 Hier wird kurz erklärt wie man eine einfache Webseite anhand eines Containers anbietet.
-### Dockerfile
+#### Dockerfile
 ```
 #
 #	Einfache Apache Umgebung
@@ -48,7 +48,7 @@ VOLUME /var/www/html
 
 CMD /bin/bash -c "source /etc/apache2/envvars && exec /usr/sbin/apache2 -DFOREGROUND"
 ```
-### Container starten
+#### Container starten
 Zuerst Image erstellen:
 ```
 docker build <Pfad vom Dockerfile>
