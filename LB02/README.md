@@ -18,6 +18,7 @@ Docker ist eine Freie Software zur Isolierung von Anwendungen mit Hilfe von Cont
 | ```docker search```    | Durchsucht das Docker Hub nach Images. |
 | ```docker attach```      | Hängt etwas an einen laufenden Container an. |
 | ```docker commit```   | Erstellt ein neues Image mit den Änderungen, die an einem Container vorgenommen worden sind. |
+| ```docker stop```   | Haltet die gewünschte Maschine an. |
 
 ### Netzwerkplan
 ![image](https://user-images.githubusercontent.com/50829674/114029048-6bae9380-9879-11eb-960f-7c95fed70dc5.png)
