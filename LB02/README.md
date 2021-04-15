@@ -103,3 +103,8 @@ USER NeuerUserName
 
 WORKDIR /homeNeuerUserName
 ```
+#### Read-Only
+Wenn man den Docker mit der Option read-only startet, können keine Änderungen am Dateisystem vorgenommen werden (auch mit sudo nicht):
+```
+docker run --read-only -d -t --name NameDesContainer Image
+```
