@@ -92,6 +92,7 @@ Dieser Service ist sehr einfach einzurichten:
 run -d --name cadvisor -v /:/rootfs:ro -v /var/run:/var/run:rw -v /sys:/sys:ro -v /var/lib/docker/:/var/lib/docker:ro -p 8080:8080 google/cadvisor:latest
 ```
 Somit kann man nun im Browser mit "localhost:8080" auf den Service zugreifen.
+![image](https://user-images.githubusercontent.com/50829674/114884203-de81b680-9e05-11eb-8290-29f6a1a5670b.png)
 
 ### Container Sicherheit
 Hiermit kann der normale User keine sudo Befehle ausführen.
