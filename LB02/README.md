@@ -77,3 +77,10 @@ docker cp <Pfad vom HTML File auf Notebook> <VM Name>:/var/www/html/
 
 Bei mir sieht es nun so aus:
 ![image](https://user-images.githubusercontent.com/50829674/114038550-42decc00-9882-11eb-8840-0b3d80876160.png)
+
+### Service Überwachung
+Dieser Service ist sehr einfach einzurichten:
+```
+run -d --name cadvisor -v /:/rootfs:ro -v /var/run:/var/run:rw -v /sys:/sys:ro -v /var/lib/docker/:/var/lib/docker:ro -p 8080:8080 google/cadvisor:latest
+```
+Somit kann man nun im Browser mit "localhost:8080" auf den Service zugreifen.
