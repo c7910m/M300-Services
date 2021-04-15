@@ -94,3 +94,12 @@ run -d --name cadvisor -v /:/rootfs:ro -v /var/run:/var/run:rw -v /sys:/sys:ro -
 Somit kann man nun im Browser mit "localhost:8080" auf den Service zugreifen.
 
 ### Container Sicherheit
+Hiermit kann der normale User keine sudo Befehle ausführen.
+Das Dockerfile muss folgendes beinhalten:
+```
+RUN useradd -ms /bin/bash NeuerUserName
+
+USER NeuerUserName
+
+WORKDIR /homeNeuerUserName
+```
