@@ -187,3 +187,4 @@ Und so kann man ihn anzeigen:
 ```
 kubectl get services
 ```
+![image](https://user-images.githubusercontent.com/50829674/115452982-652bfe80-a21f-11eb-8f74-81c274b46669.png)
