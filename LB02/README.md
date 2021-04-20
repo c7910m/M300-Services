@@ -112,7 +112,7 @@ Wenn man den Docker mit der Option read-only startet, können keine Änderungen 
 ```
 docker run --read-only -d -t --name NameDesContainer Image
 ```
-![image](https://user-images.githubusercontent.com/50829674/115436005-c0072b00-a20a-11eb-8ddb-4a7a18d53c0a.png)
+![image](https://user-images.githubusercontent.com/50829674/115451231-37de5100-a21d-11eb-8788-c11ac290e481.png)
 
 ## Kubernetes
 ### Deployment erstellen
