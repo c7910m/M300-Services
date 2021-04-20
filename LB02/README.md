@@ -114,3 +114,43 @@ docker run --read-only -d -t --name NameDesContainer Image
 ![image](https://user-images.githubusercontent.com/50829674/115436005-c0072b00-a20a-11eb-8ddb-4a7a18d53c0a.png)
 
 ## Kubernetes
+### Deployment erstellen
+Zuerst muss eine yaml Datei erstellt werden:
+```
+touch deployment.yaml
+```
+Die Datei soll folgendes beinhalten:
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubdeployment
+  labels:
+    app: kub
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: kub
+  template:
+    metadata:
+      labels:
+        app: kub
+    spec:
+      containers:
+      - name: kub-webserver
+        image: webserver
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+```
+Jetzt muss das yaml file noch applied werden, damit die Container erstellt werden. Dafür muss man folgendes eingeben:
+```
+kubectl apply -f deployment.yaml
+```
+
+Mit folgendem Command kann man nun die Pods anzeigen:
+```
+kubectl get pods
+```
+![image](https://user-images.githubusercontent.com/50829674/115450699-8c350100-a21c-11eb-8dce-9a94200022d4.png)
