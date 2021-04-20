@@ -163,11 +163,11 @@ Zuerst ein loadbalance.yaml file erstellen mit folgendem Inhalt:
 apiVersion: v1
 kind: Service
 metadata:
-  name: m300service
+  name: kubservice
   annotations:
     service.beta.kubernetes.io/linode-loadbalancer-throttle: "4"
   labels:
-    app: m300service
+    app: kubservice
 spec:
   type: LoadBalancer
   ports:
@@ -176,7 +176,7 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
-    app: m300
+    app: kub
   sessionAffinity: None
 ```
 Nun muss man den Service ausführen:
