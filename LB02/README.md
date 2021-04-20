@@ -109,3 +109,4 @@ Wenn man den Docker mit der Option read-only startet, können keine Änderungen 
 ```
 docker run --read-only -d -t --name NameDesContainer Image
 ```
+## Kubernetes
