@@ -155,3 +155,35 @@ Mit folgendem Command kann man nun die Pods anzeigen:
 kubectl get pods
 ```
 ![image](https://user-images.githubusercontent.com/50829674/115450699-8c350100-a21c-11eb-8dce-9a94200022d4.png)
+
+### Service
+
+Zuerst ein loadbalance.yaml file erstellen mit folgendem Inhalt:
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: m300service
+  annotations:
+    service.beta.kubernetes.io/linode-loadbalancer-throttle: "4"
+  labels:
+    app: m300service
+spec:
+  type: LoadBalancer
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: m300
+  sessionAffinity: None
+```
+Nun muss man den Service ausführen:
+```
+kubectl apply -f loadbalance.yaml
+```
+Und so kann man ihn anzeigen:
+```
+kubectl get services
+```
