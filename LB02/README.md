@@ -193,5 +193,6 @@ kubectl get services
 ![image](https://user-images.githubusercontent.com/50829674/115452982-652bfe80-a21f-11eb-8f74-81c274b46669.png)
 
 Nun kann man auf die Website zugreifen:
-![image](https://user-images.githubusercontent.com/50829674/115609849-59f0d580-a2e8-11eb-8152-072c90e5123a.png)
+![image](https://user-images.githubusercontent.com/50829674/115610205-d388c380-a2e8-11eb-899d-00ba42501294.png)
+
 
